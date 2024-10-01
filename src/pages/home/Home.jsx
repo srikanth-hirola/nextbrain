@@ -10,26 +10,20 @@ import FutureBrand from '../../componnets/home/FutureBrand';
 import CtaSection from '../../componnets/home/CtaSection';
 import Footer from '../../componnets/common/Footer';
 import ScrollToTopButton from '../../componnets/common/ScrollToTopButton';
-// import LoadingScreen from './componnets/loading/Loading';
-// import VideoSection from './componnets/home/BgVideoTwo';
 
 function Home() {
-  const [loading, setLoading] = useState(true); // Add loading state
-
-  // Simulate a loading delay (e.g., API call or assets loading)
+  const [loading, setLoading] = useState(true); 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false after 3 seconds
+      setLoading(false); 
     }, 3000);
 
-    return () => clearTimeout(timer); // Cleanup the timer when component unmounts
+    return () => clearTimeout(timer); 
   }, []);
 
   return (
     <>
-      {/* {loading ? (
-        <LoadingScreen onLoadingComplete={() => setLoading(false)} /> // Show loading screen
-      ) : ( */}
+
         <>
         <ScrollToTopButton />
           <Banner />
@@ -40,9 +34,7 @@ function Home() {
           <FutureBrand />
           <CtaSection/>
           <Footer/>
-          {/* <VideoSection/> */}
         </>
-      {/* )} */}
     </>
   );
 }

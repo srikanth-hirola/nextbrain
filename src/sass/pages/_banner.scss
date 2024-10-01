@@ -340,7 +340,7 @@ h2 {
 .carousel__item{
 		width:35%;
 		min-height: 90vh;
-		padding: 50px 25px;
+		padding: 6rem 25px;
 		color: #fff;
     background: #424242;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -359,6 +359,13 @@ h2 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    h2{
+      font-size: 42px;  
+      background-color: #424242;
+    }
+    .blurred-box__text{
+      color: #fff;
+    }
 }
 .carousel__slider__one{
     width: 35%;
@@ -676,25 +683,23 @@ h2 {
   transform: scale(1.5);
 }
 
-.btn.btn-background-circle:hover::before,
-.btn.btn-background-circle:focus::before {
-  transform: scale(0);
-}
+
 
 .btn.btn-background-circle {
   z-index: 1;
   overflow: hidden;
   background-color: #ff0000;
-  transition: color 500ms ease-in-out;
+  transition: color 2ms ease-in-out;
   display: flex;
   align-items: center;
   gap: 9px;
   color: #fff;
 }
 
-.btn.btn-background-circle:hover,
-.btn.btn-background-circle:focus {
-  color: white;
+.btn.btn-background-circle:hover {
+  color: #ff0000;
+  background-color: transparent;
+  border: 1px solid #ff0000;
 }
 
 

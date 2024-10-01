@@ -15,7 +15,7 @@ const FutureBrand = () => {
   useEffect(() => {
     // Initialize Lenis for smooth scrolling
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 3,
       smooth: true,
     });
 
@@ -50,15 +50,15 @@ const FutureBrand = () => {
         });
 
         // Fade out the circle and the FutureBrand section
-        gsap.to(circleRef.current, { opacity: progress < 1 ? 1 : 0, duration: 0.5 });
+        gsap.to(circleRef.current, { opacity: progress < 1 ? 1 : 1.5, duration: 1.9 });
         
         // After fading out the circle, hide the FutureBrand section
         if (progress === 1) {
-          gsap.to(sectionRef.current, { opacity: 0, duration: 0.5, onComplete: () => {
+          gsap.to(sectionRef.current, { opacity: 0, duration: 0.9, onComplete: () => {
             // After FutureBrand fades out, scroll to new section
             gsap.to(window, { scrollTo: newSectionRef.current, duration: 1 });
           }});
-          gsap.to(newSectionRef.current, { opacity: 1, duration: 0.5 });
+          gsap.to(newSectionRef.current, { opacity: 1, duration: 0.9 });
         } else {
           // Ensure FutureBrand section remains visible until animation complete
           gsap.to(sectionRef.current, { opacity: 1, duration: 0 });

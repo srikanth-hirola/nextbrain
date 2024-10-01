@@ -1,0 +1,43 @@
+.confirm-modal{
+    /* Add this to your CSS file */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Higher than the cart drawer */
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .confirm-button, .cancel-button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-button {
+    background-color: #28a745; /* Success color */
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545; /* Danger color */
+    color: white;
+  }
+  
+}

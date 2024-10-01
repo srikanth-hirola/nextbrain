@@ -3138,13 +3138,18 @@ figcaption {
   border-style: none;
   border-color: var(--dark-green);
   background-color: var(--dark-green);
-  color: var(--gray-800);
+  color: #fff;
   letter-spacing: 0.05em;
   border-radius: 1rem;
-  padding: 1.45rem 3.5rem;
-  font-size: 1.5rem;
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s;
   position: relative;
+}
+.button.is-cta:hover{
+  background-color: #fff;
+  color: #ff0000;
+  border: 1px solid #fff;
 }
 .button.is-cta:hover {
   transform: scale(1.02);
@@ -3833,7 +3838,7 @@ figcaption {
   margin: auto;
   display: flex;
   position: relative;
-  top: 18%;
+  top: 26%;
 }
 .home-hero_wrapper {
   width: 100%;
@@ -5555,6 +5560,11 @@ figcaption {
   justify-content: flex-start;
   padding: 3rem;
   display: flex;
+}
+.use-case_card-content h3 {
+  color: #000;
+  font-weight: 500;
+  font-size: 34px;
 }
 .std-hero_video {
   width: 100%;
@@ -7982,4 +7992,11 @@ button{
   padding-bottom: 2px;
   display: inline-block;
   overflow: hidden;
+}
+.orderr-today-btn{
+  background-color: #ff0000;
+  color: #fff;
+  width: fit-content;
+  padding: 12px 35px;
+  border-radius: 50px;
 }

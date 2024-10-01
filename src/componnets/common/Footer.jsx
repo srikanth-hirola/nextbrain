@@ -69,9 +69,9 @@ const Footer = () => {
                             >
                               ©
                               <span className="footer_copy-year"
-                                >(year auto updates)</span
+                                >2024 &nbsp;</span
                               >
-                              nextbrain. All rights reserved.
+                              Nextbrain. All rights reserved.
                             </div>
                             <a href="#" className="footer_legal-link"
                               >Privacy Policy</a

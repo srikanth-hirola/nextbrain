@@ -3,9 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./responsive/_about.scss);
+@import url(./common/_scrolltotop.scss);
+@import url(./common/_drawer.scss);
+@import url(./common/_cart.scss);
+@import url(./common/_loading.scss);
 @import url(./pages/_banner.scss);
 @import url(./pages/_allpageStylings.scss);
 @import url(./pages/_contact.scss);
 @import url(./pages/_animations.scss);
 @import url(./pages/_blog.scss);
-@import url(./common/_scrolltotop.scss);
+@import url(./pages/_gallery.scss);

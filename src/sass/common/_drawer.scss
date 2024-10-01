@@ -1,0 +1,97 @@
+.drawer-container{
+    height: 95vh;
+    position: relative;
+    width: fit-content;
+    z-index: 10000;
+
+.drawer {
+    border-radius: 20px 0px 20px 0;
+    position: fixed;
+    top: 0px;
+    right: 0; /* Position the drawer to the right */
+    width: 600px; /* Adjust width as needed */
+    height: 100%;
+    background: #fff; /* Background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow on the left side */
+    transform: translateX(100%); /* Start hidden off the screen */
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 20px; /* Padding inside the drawer */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    
+  }
+  
+  .drawer.open {
+    transform: translateX(0); /* Slide into view */
+  }
+  
+  .close-button {
+    background-color: transparent; /* Red background for close button */
+    color: #ff0000;
+    border: none;
+    // padding: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end; /* Align the button to the right */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #00000005;
+    border-radius: 5px; /* Rounded corners */
+    margin-block: 1rem;
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    &:focus-visible{
+        border: 1px solid #00000020;
+        outline: 1px solid #00000020;
+    }
+    &:focus{
+        border: 1px solid #00000020;
+        outline: 1px solid #00000020;
+    }
+    &:focus-within{
+        border: 1px solid #00000020;
+        outline: 1px solid #00000020;
+    }
+  }
+  
+  label {
+    display: flex;
+    align-items: center; /* Align checkbox and text */
+    margin-block: 30px;
+  }
+  
+  button[type="submit"] {
+    background-color: #ff0000; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 55px; /* Rounded corners */
+    width: fit-content;
+    margin: auto;
+
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #fff; 
+    color: #ff0000;
+    border: 1px solid #ff0000;
+  }
+  
+  
+}
+
+
+
+  
