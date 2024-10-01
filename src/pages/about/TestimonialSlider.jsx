@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import AboutSection from "./Counter";
 
 const TestimonialSlider = () => {
   return (
@@ -17,16 +18,7 @@ const TestimonialSlider = () => {
                 people
               </p>
             </div>
-            <div className="about-test-two">
-              <div className="about-test-two-one">
-                <h2>12k</h2>
-                <p>Happy Users Around World</p>
-              </div>
-              <div className="about-test-two-two">
-                <h2>150k</h2>
-                <p>Projects Already Done</p>
-              </div>
-            </div>
+          <AboutSection/>
           </div>
           <div className="about-testimonal-two">
             <div className="marquee-section">

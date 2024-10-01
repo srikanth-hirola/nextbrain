@@ -9,7 +9,8 @@ const AboutMarquee = () => {
 
   return (
     <div className="marquee-container">
-    <div className="marquee-content">
+   
+    <div className="marquee-content-reverse">
       {/* Duplicate the content to create a seamless infinite scrolling effect */}
       {tags.map((tag, index) => (
         <span

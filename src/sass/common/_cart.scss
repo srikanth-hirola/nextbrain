@@ -1,0 +1,59 @@
+.cart-container{
+    height: 95vh;
+    position: relative;
+    width: fit-content;
+    z-index: 10000;
+
+    .cart-drawer {
+    border-radius: 20px 0px 20px 0;
+    position: fixed;
+    top: 0px;
+    right: 0; /* Position the drawer to the right */
+    width: 600px; /* Adjust width as needed */
+    height: 100%;
+    background: #fff; /* Background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow on the left side */
+    transform: translateX(100%); /* Start hidden off the screen */
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 20px; /* Padding inside the drawer */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    z-index: 10000;
+    
+  }
+      
+      .cart-drawer.open {
+        transform: translateX(0); /* Slide into view */
+      }
+      
+      .close-button {
+        background-color: transparent; /* Red background for close button */
+        color: #ff0000;
+        border: none;
+        // padding: 10px;
+        margin-top: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        align-self: flex-end; /* Align the button to the right */
+      }
+}
+.back-button,
+.proceed-button,
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button {
+  background-color: #dc3545; /* Bootstrap danger color */
+}
+
+.submit-button {
+  background-color: #28a745; /* Bootstrap success color */
+}

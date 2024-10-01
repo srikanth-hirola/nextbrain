@@ -1,0 +1,97 @@
+.gallery-page-main {
+    position: relative;
+    overflow: hidden;
+    .gallery-page-sub {
+        width: 100%;
+        height: 100vh;
+
+        .gallery-bg {
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 10;
+        }.gallery-main-slider-sub{
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            transition: transform 1s ease;
+          
+              .gallery-slide {
+                width: 100%;
+                display: none;
+                justify-content: space-between;
+                align-items: center;
+              }
+              
+              .gallery-slide.active {
+                display: flex;
+              }
+        .gallery-main-slider-sub-text {
+            width: 30%;
+            .gallery-main-text {
+                width: 100%;
+                height: 40vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0px 5rem;
+                h2{
+                    text-align: left;
+                    color: #fff;
+                    font-size: 30px;
+                }
+                h3{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+                      
+        }
+        .gallery-main-slider-sub-image{
+            width: 70%;
+            .gallery-main-image {
+                width: 100%;
+                height: 100vh;
+                img{
+                    height: 100%;width: 100%;
+                    border-radius: 270px 0px 0px 270px;
+                    
+                }
+            } 
+        }
+    }
+}
+.gallery-controls {
+    position: absolute;
+    bottom: 3%;
+    right: 0%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 9999;
+  }
+  
+  .gallery-controls button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    svg{
+        font-size: 40px;
+    }
+  }
+  
+  .gallery-controls button:hover {
+    background-color: #ccc;
+  }
+}

@@ -1,16 +1,38 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Drawer from "./Drawer";
+import CartDrawer from "./CartDrawer";
 
 const Header = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
+
+  const handleOrderNowClick = () => {
+    setIsDrawerOpen(true);
+    handleCloseCartDrawer()
+  };
+
+  const handleCloseDrawer = () => {
+    setIsDrawerOpen(false);
+  };
+
+  const handleCartClick = () => {
+    setIsCartDrawerOpen(true);
+    handleCloseDrawer()
+  };
+
+  const handleCloseCartDrawer = () => {
+    setIsCartDrawerOpen(false);
+  };
   return (
     <div className="header-main-comp">
       <div
         data-w-id="df617927-7f5d-a8fb-83a8-1e1f31b37ac2"
         className="navbar_container"
       >
-        <a
-          href="/"
+        <Link
+          to="/"
           id="w-node-df617927-7f5d-a8fb-83a8-1e1f31b37ac3-31b37ac1"
           aria-current="page"
           className="navbar_logo-link w-nav-brand w--current"
@@ -24,7 +46,7 @@ const Header = () => {
           <div className="navbar_logo is-mark w-embed">
             <img src="/assets/logo.svg" alt="" />
           </div>
-        </a>
+        </Link>
         <nav
           role="navigation"
           id="w-node-df617927-7f5d-a8fb-83a8-1e1f31b37ac5-31b37ac1"
@@ -47,6 +69,10 @@ const Header = () => {
             <Link to="/faq" className="navbar_link w-nav-link">
               FAqs
             </Link>
+            <Link to="#" onClick={handleCartClick} className="navbar_link w-nav-link">
+              Cart
+            </Link>
+          
          
           </div>
         </nav>
@@ -55,12 +81,10 @@ const Header = () => {
           className="navbar_button-wrapper"
         >
           <div>
-            <div
-              data-w-id="c70c4579-6e48-f314-6c9d-3eab596fc8e2"
-              className="button is-nav"
-            >
-              <div className="button-text">Order now</div>
-            </div>
+          <div onClick={handleOrderNowClick} className="button is-nav">
+            <div className="button-text">Order now</div>
+          </div>
+         
           </div>
           <div className="navbar_menu-button w-nav-button">
             <div className="menu-icon">
@@ -73,6 +97,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Drawer isOpen={isDrawerOpen} onClose={handleCloseDrawer} />
+      <CartDrawer isOpen={isCartDrawerOpen} onClose={handleCloseCartDrawer} />
     </div>
   );
 };
