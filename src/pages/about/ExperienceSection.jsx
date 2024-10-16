@@ -44,7 +44,8 @@ const ExperienceSection = () => {
 
   return (
     <section className='logo-section'>
-      <div className="container-main">
+      <div className="container">
+        <div className="container-main">
         <div className="experience-main-section">
           <div className="experience-main-section-title">
             <h2>We create experiences and turn ideas into reality.</h2>
@@ -80,6 +81,7 @@ const ExperienceSection = () => {
           </div>
         </div>
       </div>
+      </div>  
     </section>
   );
 };

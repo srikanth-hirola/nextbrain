@@ -13,6 +13,13 @@ import Faq from "./pages/faq/Faq";
 import Gallery from "./pages/gallery/Gallery";
 import ScrollToTop from "./componnets/common/ScrollToTop";
 import PageReveal from "./componnets/common/loading/Loading";
+import TermsAndConditions from "./pages/common/TermsAndConditions";
+import PrivacyPolicy from "./pages/common/PrivacyPolicy";
+import Success from "./pages/cart/components/Success";
+import Register from "./pages/authentication/Register";
+import Login from "./pages/authentication/Login";
+import ForgotPassword from "./pages/authentication/Forgotpassword";
+import Profile from "./pages/profile/Profile";
 
 const App = () => {
   
@@ -31,7 +38,7 @@ const App = () => {
       {loading ? (
        <PageReveal/>
       ) : (
-    <>
+    <div>
       <ScrollToTop />
       <Routes>
         <Route path='/' exact element={<Home/>}/>
@@ -41,8 +48,19 @@ const App = () => {
         <Route path='/gallery' exact element={<Gallery/>}/>
         <Route path='/blog' exact element={<BlogMain/>}/>
         <Route path="/blog/:slug" exact element={<BlogDetails/>} />
+        <Route path="/terms-and-conditions" exact element={<TermsAndConditions/>} />
+        <Route path="/privacy-policy" exact element={<PrivacyPolicy/>} />
+        <Route path="/payment-success" exact element={<Success />} />
+        {/* auth routes */}
+        <Route path="/register" exact element={<Register />} />
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/forgot-password" exact element={<ForgotPassword />} />
+
+
+        {/* Profiel routes */}
+        <Route path="/profile" exact element={<Profile />} />
       </Routes>
-    </>
+    </div>
       )}
       </div>
   );

@@ -4,6 +4,7 @@
     .gallery-page-sub {
         width: 100%;
         height: 100vh;
+      
 
         .gallery-bg {
             background: #000;
@@ -13,8 +14,13 @@
             right: 0;
             width: 100%;
             height: 100vh;
-            z-index: 10;
-        }.gallery-main-slider-sub{
+            z-index: 1;
+        }
+        .gallery-main-slider{
+            position: relative;
+            z-index: 1;
+        }
+        .gallery-main-slider-sub{
             position: relative;
             z-index: 10;
             display: flex;
@@ -77,7 +83,7 @@
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
-    z-index: 9999;
+    z-index: 20;
   }
   
   .gallery-controls button {

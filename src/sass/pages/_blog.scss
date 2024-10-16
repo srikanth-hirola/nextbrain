@@ -7,7 +7,7 @@
   background: transparent;
 
   padding-block: 14px;
-  z-index: 9999 !important;
+  z-index: 9;
   background: #ffffff00;
 }
 *::-webkit-scrollbar-button{
@@ -123,7 +123,7 @@
         flex-wrap: wrap;
         gap: 20px;
         justify-content: flex-start;
-        width: 85%;margin: auto;
+        width: 100%;margin: auto;
       }
       .blog-container-new{
         width: 70%;
@@ -158,6 +158,8 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      position: relative;
+      z-index: 20;
 
   }
     
@@ -210,7 +212,7 @@
 .blog-details-main{
     padding-bottom: 4rem;
     .container-blog{
-        width: 85%;margin: auto;
+        width: 100%;margin: auto;
     }
     body, html {
         scroll-behavior: smooth;
@@ -270,8 +272,8 @@
       }
       
       p {
-        padding: 10px;
-      }
+        padding: 10px 0;
+    }
       h2{
         color: #ff0000;
         text-align: left;

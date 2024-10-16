@@ -339,7 +339,7 @@ h2 {
 }
 .carousel__item{
 		width:35%;
-		min-height: 90vh;
+		height: 90vh;
 		padding: 6rem 25px;
 		color: #fff;
     background: #424242;
@@ -419,9 +419,16 @@ h2 {
     border-radius: 2rem;
 }
 .container-main {
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 90vh;
+    overflow: hidden;
+    display: flex;
+}
+.container-main-about {
+    width: 90%;
+    margin: auto;
+    height: fit-content;
     overflow: hidden;
     display: flex;
 }
@@ -718,11 +725,14 @@ h2 {
   margin-top: 1.7rem;
   .swiper-button-prev,.swiper-button-next{
     position: relative;
-    background-color: #f5f5f5;
-    width: 80px;height: 40px;border-radius: 8px;
+    background-color: #ff0000;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
     svg{
       width: 70px;
     height: 18px;
+    color: #fff;
     }
   }
   .swiper-button-next:after{
@@ -733,4 +743,55 @@ h2 {
     visibility: hidden;
     width: 0;height: 0;
   }
+}
+
+
+.navbar_menu {
+  display: flex;
+  /* For larger screens */
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+  .navbar_container{
+    width: 75% !important;
+  }
+}
+@media screen and (min-width:1200px) and (max-width:1400px){
+  .navbar_container{
+    width: 65% !important;
+  }
+}
+@media (max-width: 992px) {
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    background-color: white; /* Adjust based on your design */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navbar_menu.is-open {
+    display: flex;
+  }
+  .navbar_menu-button {
+    padding: 0;
+    display: block !important;
+}
+.navbar_container {
+  width: 90% !important;
+}
+
+  .navbar_menu-button {
+    display: block;
+  }
+  .button.is-nav {
+    border-color: var(--nav--gray-800);
+    background-color: var(--nav--gray-800);
+    color: var(--nav--gray-50);
+    padding: 0.4rem 0.7rem !important;
+    transition: color 0.325s, background-color 0.325s, border-color 0.325s;
+    font-size: 9px;
+}
 }

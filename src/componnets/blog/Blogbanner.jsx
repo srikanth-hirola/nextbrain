@@ -5,7 +5,8 @@ import React from "react";
 const BlogBanner = () => {
   return (
     <div className="blog-banner">
-      <div className="container-main">
+    <div className="container">
+    <div className="container-main">
         <div className="blog-banner-main">
           <div className="blog-banner-main-one">
             <strong>Our Blog</strong>
@@ -20,6 +21,7 @@ const BlogBanner = () => {
           </div> */}
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -54,10 +54,7 @@
 }
 
 
-.container-main{
-  width: 85%;
-  margin: auto;
-}
+
 .main-info{
   height: 100vh;
   display: flex;
@@ -324,13 +321,22 @@
   }
 }
 
+.accordion-header {
+  background: #fff;
+  span{
+    color: #ff0000;
+  }
+}
 .accordion-header:hover {
-  background: #eaeaea;
+  background: #fafafa;
+}
+.accordion-header:active {
+  background: #fafafa;
 }
 
 .accordion-content {
   padding: 0 15px;
-  background: #f1f1f1;
+  background: transparent;
 }
 
 .accordion-inner {
@@ -545,7 +551,7 @@
       align-items: start;
       margin-top: 15px;
       h5{
-        color: #fff;
+        color: #f00;
         font-size: 18px;
         margin: 0 0 8px;
         padding: 0;
@@ -838,6 +844,26 @@ p{
   color: #000 ;
 }
 
+
+@media (max-width: 1024px) {
+  .logo-text img {
+    opacity: 1;
+  }
+
+  .title-logo:hover .logo-text img {
+    opacity: 0; /* Hide logo on hover */
+    display: none !important;
+  }
+  .title-logo:hover .logo-text {
+    opacity: 0; /* Hide logo on hover */
+    display: none !important;
+  }
+
+  .title-logo:hover .company-text {
+    opacity: 1; /* Show the company text on hover */
+    font-size: 13px;
+  }
+}
 
 
 

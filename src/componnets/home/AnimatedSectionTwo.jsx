@@ -3,7 +3,7 @@ import React from "react";
 
 const AnimatedSectionTwo = () => {
   return (
-    <>
+    <div>
       <section className="animated-two">
         <div className="animated-two-main ">
           <div className="animated-main-sticky">
@@ -116,7 +116,7 @@ const AnimatedSectionTwo = () => {
         </div>
         </div>
       </section>
-    </>
+    </div
   );
 };
 

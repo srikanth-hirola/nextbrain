@@ -1,0 +1,41 @@
+{
+    "cartItems": [
+      {
+        "productId": "NB12345",
+        "productName": "Nextbrain Eco Scooter X1",
+        "brand": "Nextbrain",
+        "quantity": 1,
+        "price": 699.99,
+        "image": "/assets/banner.png",
+        "description": "A compact and lightweight e-scooter with a top speed of 20 mph and a range of 25 miles.",
+        "specs": {
+          "battery": "36V 7.5Ah",
+          "motorPower": "350W",
+          "maxSpeed": "20 mph",
+          "range": "25 miles",
+          "weight": "28 lbs"
+        }
+      },
+      {
+        "productId": "NB54321",
+        "productName": "Nextbrain Pro Scooter Z2",
+        "brand": "Nextbrain",
+        "quantity": 2,
+        "price": 849.99,
+        "image": "/assets/banner.png",
+        "description": "A powerful e-scooter with a 500W motor, ideal for long-distance rides with a range of 40 miles.",
+        "specs": {
+          "battery": "48V 10Ah",
+          "motorPower": "500W",
+          "maxSpeed": "25 mph",
+          "range": "40 miles",
+          "weight": "35 lbs"
+        }
+      }
+    ],
+    "subtotal": 2399.97,
+    "shippingCost": 49.99,
+    "totalCost": 2449.96,
+    "currency": "USD"
+  }
+  

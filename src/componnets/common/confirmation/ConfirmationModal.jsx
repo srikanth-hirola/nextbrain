@@ -12,7 +12,7 @@ const ConfirmationModal = ({ onConfirm, onCancel }) => {
   }, []);
 
   return (
-   <>
+   <div>
     <div className="confirm-modal">
          <div className="modal-overlay">
       <div className="modal" ref={modalRef}>
@@ -23,7 +23,7 @@ const ConfirmationModal = ({ onConfirm, onCancel }) => {
       </div>
     </div>
     </div>
-   </>
+   </div
   );
 };
 

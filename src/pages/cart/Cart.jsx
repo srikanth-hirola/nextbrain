@@ -19,7 +19,7 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div  className='crt' >
       {isCheckout ? (
         <Checkout onBack={handleBack} />
       ) : (

@@ -1,0 +1,59 @@
+.payment-success-main{
+    height: 120vh;display: flex;align-items: center;justify-content: center;
+    position: relative;
+    z-index: 10000;
+    .proceed-button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .proceed-button:disabled {
+        background-color: #cccccc;
+      }
+      
+      .loading-text {
+        display: inline-block;
+      }
+      
+      .payment-success {
+        height: 60vh;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      .icon-container {
+        margin-bottom: 20px;
+      }
+        .links{
+          margin-top: 20px;margin-bottom: 50px;
+        }
+      .home-link{
+        display: inline-block;
+        margin: 10px;
+        padding: 7px 15px;
+        font-size: 14px;
+        background-color: #ff0000;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .order-link {
+        display: inline-block;
+        margin: 10px;
+        padding: 7px 15px;
+        font-size: 14px;
+        background-color: #000;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      
+      .home-link:hover, .order-link:hover {
+        background-color: #218838;
+      }
+      
+}

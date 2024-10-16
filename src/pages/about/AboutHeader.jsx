@@ -1,15 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Header from '../../componnets/common/Header'
+// import Header from '../../componnets/common/Header'
 
 const AboutHeader = () => {
   return (
-<>
-<Header/>
+<div>
+{/* <Header/> */}
   
     <section className='page-header'>
-        <div className="container-main">
+        <div className="container">
             <div className="main-info mt-80" style={{translate: 'none', rotate: 'none', scale: 'none', opacity: 1, transform: 'translate(0px, 0px)'}}>
                 <div className="page-header-main">
                     <div className="page-header-main-sub-one">
@@ -66,7 +66,7 @@ const AboutHeader = () => {
                 </div>
             </div> */}
     </section>
-</>
+</div>
   )
 }
 

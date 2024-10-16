@@ -55,7 +55,7 @@ const TeamSection = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <section
         ref={mainSectionRef}
         className='main-team-mem-sec'
@@ -76,6 +76,24 @@ const TeamSection = () => {
             <Swiper
               spaceBetween={30} // Adjust spacing between slides
               slidesPerView={5} // Number of slides to show at once
+              breakpoints={{
+                // When window width is >= 320px
+                320: {
+                  slidesPerView: 1, // 1 slide on mobile
+                },
+                // When window width is >= 768px (Tablet)
+                768: {
+                  slidesPerView: 2, // 2 slides on tablet
+                },
+                // When window width is >= 1024px (Small Desktop)
+                1024: {
+                  slidesPerView: 3, // 3 slides on small desktop
+                },
+                // When window width is >= 1280px (Large Desktop)
+                1280: {
+                  slidesPerView: 5, // 5 slides on large desktop
+                },
+              }}
               className="team-slider" // Add a class for custom styling
             >
               {teamMembers.map((member, index) => (
@@ -97,7 +115,7 @@ const TeamSection = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

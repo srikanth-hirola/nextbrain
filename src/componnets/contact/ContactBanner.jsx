@@ -5,10 +5,11 @@ import Header from "../common/Header";
 
 const ContactBanner = () => {
   return (
-   <>
+   <div>
     <Header/>
     <div className="contact-banner">
-      <div className="container-main">
+     <div className="container">
+     <div className="container-main">
         <div className="contact-banner-main">
           <div className="contact-banner-main-one">
             <strong>Contact Us</strong>
@@ -23,8 +24,9 @@ const ContactBanner = () => {
           </div>
         </div>
       </div>
+     </div>
     </div>
-   </>
+   </div>
   );
 };
 

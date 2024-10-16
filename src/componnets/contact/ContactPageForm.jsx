@@ -5,7 +5,8 @@ import React from "react";
 const ContactPageForm = () => {
   return (
     <section className="contact-page-form">
-        <div className="container-main">
+       <div className="container">
+       <div className="container-main">
       <div className="contact-page-form-sub" >
          <div className="contact-page-for-main">
          <div className="contact-page-form-text">
@@ -50,6 +51,7 @@ const ContactPageForm = () => {
          </div>
         </div>
       </div>
+       </div>
     </section>
   );
 };

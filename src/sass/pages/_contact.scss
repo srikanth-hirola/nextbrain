@@ -21,16 +21,17 @@
   }
   
 .contact-banner {
-    height: 70vh;
+    height: 90vh;
+    display: flex;align-items: center;
     background: #000;
     .contact-banner-main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 70vh;
+        height: 90vh;
     }
     .contact-banner-main-one{
-        width: 50%;
+        width: 44%;
         h2{
             color: #fff;
             font-size: 60px;
@@ -40,7 +41,7 @@
         }
     }
     .contact-banner-main-two{
-        width: 50%;
+        width: 48%;
        p{
         font-size: 18px;
         line-height: 34px;
@@ -52,6 +53,7 @@
 .contact-page-form {
     background: #000;
     height: 70vh;
+    z-index: 10;
     .contact-page-form-sub{
         width: 100%;
     }

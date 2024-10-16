@@ -62,24 +62,48 @@ const Gallery = () => {
     });
 
     // Animate the current slide out
-    tl.to(imageRefs.current[currentSlide], {
-      clipPath: 'circle(100px at 70% 50%)',
-      duration: 1,
-      ease: 'power2.out'
-    })
-    .to(imageRefs.current[currentSlide], {
-      y: 0, 
-      clipPath: 'circle(0px at 50% -450%)',
-      duration: 2,
-      ease: 'power2.in'
-    }, '-=0.5'); // Start shrinking the image earlier for smooth transition
-
-    tl.to(textRefs.current[currentSlide], {
-      y: 0, // Move text up and out
-      opacity: 0,
-      duration: 0.9,
-      ease: 'power2.in'
-    }, '-=1');
+    if (window.innerWidth < 768) {
+      // Apply animation for screens below 768px
+      tl.to(imageRefs.current[currentSlide], {
+        clipPath: 'circle(80px at 50% 50%)', // Adjusted clipPath for smaller screens
+        duration: 1,
+        ease: 'power2.out'
+      })
+      .to(imageRefs.current[currentSlide], {
+        y: 0, 
+        clipPath: 'circle(0px at 50% -300%)', // Adjusted clipPath position
+        duration: 1.5,
+        ease: 'power2.in'
+      }, '-=0.5'); // Keep the early start for smooth transition
+    
+      tl.to(textRefs.current[currentSlide], {
+        y: 0, // Adjust the text animation if necessary
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power2.in'
+      }, '-=0.8');
+    } else {
+      // Original animation for larger screens
+      tl.to(imageRefs.current[currentSlide], {
+        clipPath: 'circle(100px at 70% 50%)',
+        duration: 1,
+        ease: 'power2.out'
+      })
+      .to(imageRefs.current[currentSlide], {
+        y: 0, 
+        clipPath: 'circle(0px at 50% -450%)',
+        duration: 2,
+        ease: 'power2.in'
+      }, '-=0.5'); // Start shrinking the image earlier for smooth transition
+    
+      tl.to(textRefs.current[currentSlide], {
+        y: 0, // Move text up and out
+        opacity: 0,
+        duration: 0.9,
+        ease: 'power2.in'
+      }, '-=1');
+    }
+    
 
     const nextSlide = (currentSlide + 1) % totalSlides;
 
@@ -116,27 +140,47 @@ const Gallery = () => {
       }
     });
 
-     // Animate the current slide out
-     tl.to(imageRefs.current[currentSlide], {
-      clipPath: 'circle(100px at 70% 50%)',
-      duration: 1,
-      ease: 'power2.out'
-    })
-    .to(imageRefs.current[currentSlide], {
-      y: 0, 
-      clipPath: 'circle(0px at 50% -450%)',
-      duration: 2,
-      ease: 'power2.in'
-    }, '-=0.5'); // Start shrinking the image earlier for smooth transition
-   
-
-    // Animate the current text sliding up and disappearing
-    tl.to(textRefs.current[currentSlide], {
-      y: 0,
-      opacity: 0,
-      duration: 0.8,
-      ease: 'power2.in'
-    }, '-=1');
+    if (window.innerWidth < 768) {
+      // Apply animation for screens below 768px
+      tl.to(imageRefs.current[currentSlide], {
+        clipPath: 'circle(80px at 50% 50%)', // Adjusted clipPath for smaller screens
+        duration: 1,
+        ease: 'power2.out'
+      })
+      .to(imageRefs.current[currentSlide], {
+        y: 0, 
+        clipPath: 'circle(0px at 50% -300%)', // Adjusted clipPath position
+        duration: 1.5,
+        ease: 'power2.in'
+      }, '-=0.5'); // Keep the early start for smooth transition
+    
+      tl.to(textRefs.current[currentSlide], {
+        y: 0, // Adjust the text animation if necessary
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power2.in'
+      }, '-=0.8');
+    } else {
+      // Original animation for larger screens
+      tl.to(imageRefs.current[currentSlide], {
+        clipPath: 'circle(100px at 70% 50%)',
+        duration: 1,
+        ease: 'power2.out'
+      })
+      .to(imageRefs.current[currentSlide], {
+        y: 0, 
+        clipPath: 'circle(0px at 50% -450%)',
+        duration: 2,
+        ease: 'power2.in'
+      }, '-=0.5'); // Start shrinking the image earlier for smooth transition
+    
+      tl.to(textRefs.current[currentSlide], {
+        y: 0, // Move text up and out
+        opacity: 0,
+        duration: 0.9,
+        ease: 'power2.in'
+      }, '-=1');
+    }
 
     // Move to the previous slide (looping)
     const prevSlide = (currentSlide - 1 + totalSlides) % totalSlides;
@@ -165,7 +209,7 @@ const Gallery = () => {
   };
 
   return (
-   <>
+   <div>
     <div className="gallery-page-main">
       <Header/>
       <div className="gallery-page-sub">
@@ -211,7 +255,7 @@ const Gallery = () => {
      
     </div>
      <Footer/>
-   </>
+   </div>
   );
 };
 

@@ -22,20 +22,25 @@ function Home() {
   }, []);
 
   return (
-    <>
+    <div>
 
-        <>
+        <div>
         <ScrollToTopButton />
           <Banner />
           <FeatureSection />
           <MyComponent />
           <Features />
-          <BgVideo />
+           <BgVideo />
           <FutureBrand />
           <CtaSection/>
           <Footer/>
-        </>
-    </>
+          {/* <Features />
+          <BgVideo />
+          <FutureBrand />
+          <CtaSection/>
+          <Footer/> */}
+        </div>
+    </div>
   );
 }
 

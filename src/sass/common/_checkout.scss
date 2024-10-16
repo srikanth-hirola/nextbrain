@@ -1,0 +1,117 @@
+.checkout-main{
+    // styles.scss
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+
+  h3 {
+    margin: 0 0 15px;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+
+    .save-button, .cancel-button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+
+      &.save-button {
+        background-color: #4CAF50; // Green
+      }
+
+      &.cancel-button {
+        background-color: #f44336; // Red
+      }
+    }
+  }
+}
+
+// Checkout styles
+.checkout-main {
+  padding: 20px;
+}
+
+.checkout-content {
+
+  h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    color: #000;
+  }
+  form{
+    label{
+      margin: 10px 0px;
+      color:#000;
+      font-size: 14px;
+      font-family: "Poppins",sans-serif;
+      font-weight: 500;
+    }
+    input{
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border: 1px solid #00000010;
+      width: 100%;
+      height: 45px;
+      border-radius: 6px;
+      color: #000;
+      font-size: 14px;
+      font-family: "Poppins",sans-serif;
+      font-weight: 500;
+      padding-inline: 20px;
+      &:focus-visible,&:focus-within,&:focus,&:hover{
+        border: 1px solid #00000020;
+        outline: 1px solid #00000001;
+      }
+    }
+  }
+}
+
+.address-section {
+  margin-top: 20px;
+
+  .address-select {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .add-address-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2196F3; // Blue
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+}

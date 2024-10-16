@@ -1,0 +1,22 @@
+@media screen and (max-width:768px) {
+    .login{
+        flex-direction: column;
+        .login__image{
+            display: none;
+        }
+        .login__form{
+            width: 90%;
+        }
+    }
+    .register{
+        flex-direction: column;
+        .register__image{
+            display: none;
+        }
+        .register__form{
+            width: 90%;
+            margin: auto;
+        }
+    }
+   
+}

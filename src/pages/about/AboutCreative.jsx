@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import ProductDetail from "./AboutAccordian";
@@ -6,7 +7,11 @@ const AboutCreative = () => {
   return (
     <div>
       <section className="intro-corp section-padding pt-0">
-        <div className="container-main">
+       <div className="container">
+        <h2 className="fq-tittl"> 
+          FAQ's
+        </h2>
+       <div className="container-main-about">
           <div className="row justify-content-around align-items-center w-100">
             <div className="col-lg-5 valign md-mb50">
               <div className="imgs mb-80">
@@ -36,7 +41,8 @@ const AboutCreative = () => {
               <ProductDetail />
             </div>
           </div>
-        </div>
+        </div>s
+       </div>
       </section>
     </div>
   );

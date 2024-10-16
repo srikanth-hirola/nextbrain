@@ -7,10 +7,11 @@ import CartDrawer from "./CartDrawer";
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // New state for mobile menu
 
   const handleOrderNowClick = () => {
     setIsDrawerOpen(true);
-    handleCloseCartDrawer()
+    handleCloseCartDrawer();
   };
 
   const handleCloseDrawer = () => {
@@ -19,12 +20,17 @@ const Header = () => {
 
   const handleCartClick = () => {
     setIsCartDrawerOpen(true);
-    handleCloseDrawer()
+    handleCloseDrawer();
   };
 
   const handleCloseCartDrawer = () => {
     setIsCartDrawerOpen(false);
   };
+
+  const handleBurgerMenuClick = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle mobile menu visibility
+  };
+
   return (
     <div className="header-main-comp">
       <div
@@ -50,10 +56,10 @@ const Header = () => {
         <nav
           role="navigation"
           id="w-node-df617927-7f5d-a8fb-83a8-1e1f31b37ac5-31b37ac1"
-          className="navbar_menu w-nav-menu"
+          className={`navbar_menu w-nav-menu ${isMobileMenuOpen ? "is-open" : ""}`}
         >
           <div className="navbar_menu-link-wrapper">
-          <Link to="/about" className="navbar_link w-nav-link">
+            <Link to="/about" className="navbar_link w-nav-link">
               About
             </Link>
             <Link
@@ -66,14 +72,16 @@ const Header = () => {
             <Link to="/gallery" className="navbar_link w-nav-link">
               Gallery
             </Link>
-            <Link to="/faq" className="navbar_link w-nav-link">
-              FAqs
+            <Link to="/contact" className="navbar_link w-nav-link">
+              Contact
             </Link>
-            <Link to="#" onClick={handleCartClick} className="navbar_link w-nav-link">
+            <Link
+              to="#"
+              onClick={handleCartClick}
+              className="navbar_link w-nav-link"
+            >
               Cart
             </Link>
-          
-         
           </div>
         </nav>
         <div
@@ -81,12 +89,14 @@ const Header = () => {
           className="navbar_button-wrapper"
         >
           <div>
-          <div onClick={handleOrderNowClick} className="button is-nav">
-            <div className="button-text">Order now</div>
+            <div onClick={handleOrderNowClick} className="button is-nav">
+              <div className="button-text">Order now</div>
+            </div>
           </div>
-         
-          </div>
-          <div className="navbar_menu-button w-nav-button">
+          <div
+            className="navbar_menu-button w-nav-button"
+            onClick={handleBurgerMenuClick}
+          >
             <div className="menu-icon">
               <div className="menu-icon_line-top"></div>
               <div className="menu-icon_line-middle">

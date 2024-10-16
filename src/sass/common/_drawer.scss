@@ -2,7 +2,7 @@
     height: 95vh;
     position: relative;
     width: fit-content;
-    z-index: 10000;
+    z-index: 10000 !important;
 
 .drawer {
     border-radius: 20px 0px 20px 0;
@@ -14,7 +14,7 @@
     background: #fff; /* Background color */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Shadow on the left side */
     transform: translateX(100%); /* Start hidden off the screen */
-    z-index: 1000; /* Ensure it appears above other content */
+    z-index: 1000 !important; /* Ensure it appears above other content */
     padding: 20px; /* Padding inside the drawer */
     display: flex;
     flex-direction: column;
@@ -95,3 +95,13 @@
 
 
   
+
+@media screen and (max-width: 768px) {
+  .drawer-container .drawer{
+    width: 95%;
+  }
+  .close-button {
+
+    margin-inline: 2rem;
+}
+}

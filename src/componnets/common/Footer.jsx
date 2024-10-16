@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -73,9 +74,11 @@ const Footer = () => {
                               >
                               Nextbrain. All rights reserved.
                             </div>
-                            <a href="#" className="footer_legal-link"
-                              >Privacy Policy</a
-                            ><a
+                            <Link to="/terms-and-conditions" className="footer_legal-link"
+                              >Terms and Conditions</Link>
+                            <Link to="/privacy-policy" className="footer_legal-link"
+                              >Privacy Policy</Link>
+                            <a
                               href="#"
                               target="_blank"
                               className="footer_legal-link"

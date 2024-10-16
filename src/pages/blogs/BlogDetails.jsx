@@ -16,19 +16,20 @@ const BlogDetails = () => {
     return <div>Blog not found</div>;
   }
   return (
-    <>
+    <div>
         <ScrollToTopButton />
 
     <div className="blog-details-main">
     <main>
     <Header/>
       <header style={{backgroundImage:`url(${blog.image})`}} >
-        <div onClick={() => document.getElementById('down').scrollIntoView()}>
+        <span onClick={() => document.getElementById('down').scrollIntoView()}>
         
-        </div>
+        </span>
       </header>
 
-      <div className="container-blog">
+     <div className="container">
+     <div className="container-blog">
       <div>
         <h1 id="down">Photography</h1>
         
@@ -64,10 +65,11 @@ const BlogDetails = () => {
         <p>Etiam semper, diam aliquam consequat rhoncus, augue quam semper erat, bibendum euismod urna nisi ac ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt tristique viverra. Mauris venenatis, lorem sit amet vulputate tincidunt, dolor urna varius velit, vel aliquam erat lorem nec mi. Fusce at ornare turpis. Quisque consectetur, velit vel venenatis ultrices, nisl elit porttitor tellus, pharetra finibus eros odio in nisi. Cras tincidunt nulla ac pellentesque finibus. Curabitur interdum urna in tellus dapibus eleifend. In nec pellentesque odio, ut auctor leo. Phasellus vel nisi in nisi egestas mollis. In ornare eleifend pulvinar.</p>
       </div>
       </div>
+     </div>
     </main>
     </div>
     <Footer/>
-    </>
+    </div>
   );
 };
 

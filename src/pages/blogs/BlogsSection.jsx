@@ -66,7 +66,8 @@ const BlogSection = () => {
        <PageReveal/>
       ) : (
         <div className={`blog-details-main ${loading ? 'hidden' : ''}`}>
-        <div className="blog-container">
+       <div className="container">
+       <div className="blog-container">
           <div className="blog-main-sub-sections">
             <div className="blog-container-new">
               <div className="blog-man">
@@ -109,6 +110,7 @@ const BlogSection = () => {
             </div>
           </div>
         </div>
+       </div>
       </div>
       )
 

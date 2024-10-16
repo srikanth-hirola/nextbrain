@@ -17,7 +17,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export default function TestimonalCards() {
   return (
-    <>
+    <div>
       <div className="swiper-container">
       <Swiper
       effect={'cards'}
@@ -1384,6 +1384,6 @@ export default function TestimonalCards() {
 
        
       </div>
-    </>
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import React from "react";
 const AboutStory = () => {
   return (
     <section className="pg-about section-padding sub-bg">
-      <div className="container-main">
+      <div className="container">
       <div className="container-about">
         <div className="row">
           <div className="col-lg-4">
@@ -14,7 +14,7 @@ const AboutStory = () => {
               style={{backgroundImage: 'url("assets/about/sq1.jpg")'}}
             ></div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-8 bg-mmg">
             <div
               className="bg-img radius-10"
               data-background="assets/imgs/about/sq2.jpg"

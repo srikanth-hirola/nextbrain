@@ -2,9 +2,10 @@
 import React from "react";
 
 const AboutServices = () => {
-  return <>
+  return <div>
   <section className="about-services">
-  <div className="container-main">
+ <div className="container">
+ <div className="container-main">
   <div className="section-about-main">
         <div className="col-md-12">
           <div className="section-about-main-one">
@@ -69,8 +70,9 @@ const AboutServices = () => {
         </div>
     </div>
   </div>
+ </div>
   </section>
-  </>;
+  </div>;
 };
 
 export default AboutServices;

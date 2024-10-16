@@ -20,6 +20,7 @@ const Features = () => {
                           <div className="max-width-large align-center">
                             <div className="margin-bottom margin-xsmall">
                               <h2
+                              className='ft-name'
                                 data-w-id="012489d2-e146-54ef-be06-3c0df126778a"
                               >
                                 It’s time to build your corporate fleet
@@ -27,7 +28,7 @@ const Features = () => {
                             </div>
                             <p
                               data-w-id="012489d2-e146-54ef-be06-3c0df126778c"
-                              className="text-size-medium"
+                              className="text-size-medium text-size-medium-p"
                             >
                               nextbrain is available for companies on two different
                               use cases

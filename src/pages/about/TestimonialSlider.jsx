@@ -8,7 +8,8 @@ const TestimonialSlider = () => {
   return (
     <section>
       <div className="about-testimonal">
-        <div className="container-main">
+    <div className="container">
+    <div className="container-main">
           <div className="about-testimonal-one">
             <div className="about-test-one">
               <h3>Since From 2008</h3>
@@ -309,6 +310,7 @@ const TestimonialSlider = () => {
             </div>
           </div>
         </div>
+    </div>
       </div>
     </section>
   );

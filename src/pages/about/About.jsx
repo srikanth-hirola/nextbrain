@@ -13,6 +13,7 @@ import ExperienceSection from './ExperienceSection';
 import Footer from '../../componnets/common/Footer';
 import CtaSection from '../../componnets/home/CtaSection';
 import ScrollToTopButton from '../../componnets/common/ScrollToTopButton';
+import Header from '../../componnets/common/Header';
 
 const About = () => {
   const sectionsRef = useRef([]);
@@ -64,8 +65,9 @@ const About = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <ScrollToTopButton />
+      <Header/>
       <div >
         <AboutHeader />
       </div>
@@ -95,9 +97,9 @@ const About = () => {
       </div>
       <div  ref={addToRefs} style={{ position: 'sticky', top: '0',background:'#fff',zIndex:9999 }}>
 
-      <Footer />
+      <Footer className='cs' />
       </div>
-    </>
+    </div>
   );
 };
 
